@@ -1,0 +1,30 @@
+:root {
+    --gray1: #d0d0d0;
+    --gray2: #a0a0a0;
+    --gray3: #707070;
+    --gray4: #404040;
+    --gray5: #000000;
+
+    --green0: #a6ffed;
+    --green1: #c4c1da;
+    --green2: #b5e4da;
+    --green3: #988bc7;
+    --green4: #3c3c3c;
+    --green5: #353535;
+}
+
+.light-theme {
+    --primary-bg-color: var(--green1);
+    --secondary-bg-color: var(--green1);
+
+    --primary-font-color: var(--gray4);
+    --secondary-font-color: var(--gray5);
+}
+
+.dark-theme {
+    --primary-bg-color: var(--green5);
+    --secondary-bg-color: var(--green4);
+
+    --primary-font-color: var(--gray1);
+    --secondary-font-color: var(--gray2);
+}

@@ -1,0 +1,23 @@
+#main-container {
+    background-color: rgb(116, 178, 123);
+    width: 600px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #397524 #DFE9EB;
+}
+
+h3 { /* https://html-css-js.com/css/generator/text-shadow/ */
+    font-size: 35px;
+    letter-spacing: 10px;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 55px #000000, 0 0 75px #49ff18;
+    color: #FFFFFF;
+}

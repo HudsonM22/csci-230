@@ -1,0 +1,46 @@
+#display-box {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: inset -2px 6px 14px 9px rgba(0,0,0,0.25);
+    background-color: white;
+
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: all 50ms;
+    animation: slide-up 1s linear;
+    margin-left: 16px;
+}
+
+#display-box:hover {
+    transform: scale(1.02);
+
+    box-shadow: 2px 23px 60px 6px rgba(0,0,0,0.57);
+}
+
+#person {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#info-top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    padding: 10px;
+    height: 50%;
+}
+
+#info-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    padding: 10px;
+    height: 50%;
+}

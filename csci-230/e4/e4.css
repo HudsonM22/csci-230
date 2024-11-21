@@ -1,0 +1,134 @@
+body {
+    background-image: url('Images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+img {
+    position: absolute;
+}
+
+#fish1 {
+    top: 16vw;
+    left: 13vw;
+}
+
+#fish1:hover {
+    animation: swim-r 5s ease-in-out infinite;
+}
+
+#fish2 {
+    top: 20vw;
+    left: 50vw;
+}
+
+#fish2:hover {
+    animation: swim-l 5s ease-in-out infinite;
+}
+
+#fish3 {
+    top: 20vw;
+    left: 40vw;
+    opacity: 0.9;
+    transition: transform 1s ease, opacity 2s ease;
+}
+
+#fish3:hover {
+    transform: translate(0px, 50px) scale(1.2);
+    opacity: 1;
+}
+
+#fish4 {
+    top: 90px;
+    right: -70px;
+}
+
+#fish4:hover {
+    animation: swim-out-left 5s linear infinite;
+}
+
+#hook {
+    top: -3vw;
+    left: 70vw;
+    transition: all 600ms;
+}
+
+#hook:hover {
+    transform: translateY(35px);
+}
+
+#sub {
+    top: 50%;
+    left: -300px;
+}
+  
+#sub:hover {
+    animation: submarine 14s ease-in-out;
+}
+
+#seaweed {
+    bottom: 10px;
+    left: 30vw;
+    transition: all 400ms;
+}
+
+#seaweed:hover {
+    transform: translate(0px, 50px) scale(1.2);
+}
+
+.bounce-anim {
+    animation: bounce-up 4s linear;
+}
+
+.sub-anim {
+    animation: submarine 14s linear;
+}
+
+@keyframes bounce-up {
+    25% {
+        transform: translateY(30px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    75% {
+        transform: translateY(30px);
+    }
+}
+
+@keyframes swim-r {
+    40% {
+        transform: translateX(35vw) scaleX(-1);
+    }
+}
+
+@keyframes swim-l {
+    40% {
+        transform: translateX(-35vw) scaleX(-1);
+    }
+}
+
+
+@keyframes submarine {
+    40% {
+        transform: translateX(140vw) ;
+    }
+    60% {
+        transform: scaleX(-1);
+    }
+
+}
+
+@keyframes swim-out-left {
+    90% {
+        transform: translateX(-120vw);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+

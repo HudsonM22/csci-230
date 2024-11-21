@@ -1,0 +1,47 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: rgb(40, 40, 40);
+}
+
+#main {
+    width: 700px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    border-radius: 7px;
+    background-color: rgb(45, 45, 45);
+    box-shadow: inset -1px 1px 24px -3px rgba(8, 251, 255, 0.75);
+    overflow-y: scroll;
+    align-items: center;
+
+    scrollbar-width: thin;
+    scrollbar-color: #02E6FF #363939;
+
+}
+
+h6 {
+    text-align: center;
+    font-family: monospace;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    background-color: #363939;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 20px;
+}
+
+.pane {
+    width: 90%;
+    height: 350px;
+    background-color: rgb(64, 64, 64);
+    border-radius: 10px;
+    border: 3px solid aqua;
+    margin-top: 30px;
+    flex-shrink: 0;
+}
+

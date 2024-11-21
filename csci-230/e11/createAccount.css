@@ -1,0 +1,123 @@
+@import url('common.css');
+@import url('themes.css');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+
+    background-color: var(--primary-bg-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+fieldset {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    font-family: monospace;
+    font-size: 1.2rem;
+    color: white;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* https://getcssscan.com/css-buttons-examples its number 30, i wanted to make the button look good, i will be a button engineer */
+/* CSS */
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 20px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+#noti {
+    background-color: #000000;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid red;
+    width: fit-content;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+
+    top: 20%;
+
+    font-family: monospace;
+    font-size: 13px;
+
+    display: flex;
+
+    position: absolute;
+    opacity: 0;
+    z-index: 3;
+
+    transition: all 500ms;
+    box-shadow: #ff0000 0 3px 7px inset;
+}
+
+a {
+    text-decoration: none;
+    color: #D6D6E7;
+}

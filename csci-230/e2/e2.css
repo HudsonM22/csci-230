@@ -1,0 +1,12 @@
+
+
+.formLabel {
+    font-family: Verdana, sans-serif;
+    font-style: normal;
+    font-weight: bold ;
+}
+
+#image {
+    align-items: center;
+    display: flex;
+}

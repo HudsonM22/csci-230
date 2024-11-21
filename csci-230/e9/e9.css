@@ -1,0 +1,132 @@
+body{
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#top-shape-container{
+    height: 50%;
+    width: 100%;
+    top: 0%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 14%;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+#bot-shape-container{
+    height: 50%;
+    width: 100%;
+    top: 0%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15%;
+    background: rgb(34,193,195);
+    background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+/* used a div shape generator */
+
+#shape1 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+}
+  
+#shape2 {
+    width: 150px;
+    height: 100px;
+    background-color: green;
+    transform: skewX(20deg);
+}
+  
+#shape3 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+  
+#shape4 {
+    width: 120px;
+    height: 120px;
+    background-color: yellow;
+    border-radius: 50% 0% 0% 50%;
+}
+  
+#shape5 {
+    width: 150px;
+    height: 100px;
+    background-color: purple;
+    transform: rotate(45deg);
+}
+
+/* the animations for events\ I add the animation to the div with the id of the event */
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes mirror {
+    0%, 100% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(-1);
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100vw);
+    }
+    50.1% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}

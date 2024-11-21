@@ -1,0 +1,9 @@
+@import url('common.css');
+@import url('themes.css');
+
+body {
+    color: var(--primary-font-color);
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: bold;
+}

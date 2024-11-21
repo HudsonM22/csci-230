@@ -1,0 +1,180 @@
+body {
+    background-color: rgb(255, 1, 1);
+    height: 100vh; /*had to use vh which is viewport for all the rows to display correctly */
+    margin: 0%; /*this sets the viewport to be the entire page*/
+    padding: 0%;
+}
+
+.row {
+    height: 25vh;
+    width: 100%;
+    display: flex; /*I tried my absolute best to use inline block on all the shape class but could not figure it out at all to get them to orient themselves correctly, had to surrender*/
+    position: relative;
+}
+
+.shape {
+    min-height: 100%;
+    width: 25%; /*each is 1/4 of the page that way i can have interconnecting locks so they can all meet the requirement of "overlapping" 2 shapes */
+}
+
+.shape:hover {
+    background-color: black !important;
+}
+
+
+#div1 { background-color: aqua; }
+#div2 { background-color: coral; }
+#div3 { background-color: lightgreen; }
+#div4 { background-color: lightblue; }
+#div5 { background-color: yellow; }
+#div6 { background-color: pink; }
+#div7 { background-color: orange; }
+#div8 { background-color: violet; }
+#div9 { background-color: lightcoral; }
+#div10 { background-color: khaki; }
+#div11 { background-color: #e6e6fa; }
+#div12 { background-color: salmon; }
+#div13 { background-color: turquoise; }
+#div14 { background-color: gold; }
+#div15 { background-color: plum; }
+#div16 { background-color: thistle; }
+
+.interlock-row {
+    position: absolute;
+    background-color: transparent;
+    height: 100px;
+    width: 100%;
+    bottom: -33%;
+    z-index: 3;
+}
+
+#interlock-block1{
+    background-color: rgb(128, 57, 7);
+    height: 70px;
+    width: 65px;
+    position: absolute;
+    margin-left: 0%;
+}
+
+#interlock-block2 {
+    background-color: rgb(74, 54, 54);
+    height: 45px; 
+    width: 50px;  
+    position: absolute;
+    margin-left: 23%;
+}
+
+#interlock-block3 {
+    background-color: rgb(17, 35, 42);
+    height: 55px; 
+    width: 35px;  
+    position: absolute;
+    margin-left: 48.5%;
+}
+
+#interlock-block4 {
+    background-color: rgb(108, 152, 11);
+    height: 40px; 
+    width: 60px;  
+    position: absolute;
+    margin-left: 73%;
+}
+
+#interlock-block5 {
+    background-color: lightgoldenrodyellow;
+    height: 50px;
+    width: 40px;  
+    position: absolute;
+    margin-left: 97%;
+}
+
+#interlock-block6 {
+    background-color: rgb(148, 32, 90);
+    height: 43px; 
+    width: 55px;  
+    position: absolute;
+    margin-left: 0%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+}
+
+#interlock-block7 {
+    background-color: lightseagreen;
+    height: 60px; 
+    width: 45px;  
+    position: absolute;
+    margin-left: 23%;
+    border-radius: 20%;
+    border: 6px, solid, black;
+}
+
+#interlock-block8 {
+    background-color: lightsalmon;
+    height: 70px; 
+    width: 80           px;  
+    position: absolute;
+    margin-left: 48.5%;
+}
+
+#interlock-block9 {
+    background-color: lightsteelblue;
+    height: 55px; 
+    width: 50px;  
+    position: absolute;
+    margin-left: 73.5%;
+}
+
+#interlock-block10 {
+    background-color: rgb(19, 125, 91);
+    height: 50px; /* Random number between 25 and 60 */
+    width: 60px;  /* Random number between 25 and 60 */
+    position: absolute;
+    margin-left: 90%;
+}
+
+#interlock-block11 {
+    background-color: rgb(136, 0, 0);
+    height: 50px;
+    width: 45px;  
+    position: absolute;
+    margin-left: 0%;
+}
+
+#interlock-block12 {
+    background-color: lightblue;
+    height: 40px; 
+    width: 35px;  
+    position: absolute;
+    margin-left: 23%;
+}
+
+#interlock-block13 {
+    background-color: rgb(45, 53, 9);
+    height: 55px; 
+    width: 50px;  
+    position: absolute;
+    margin-left: 48.5%;
+}
+
+#interlock-block14 {
+    background-color: lightgreen;
+    height: 48px; 
+    width: 40px;  
+    position: absolute;
+    margin-left: 73%;
+}
+
+#interlock-block15 {
+    background-color: rgb(26, 17, 22);
+    height: 45px; 
+    width: 55px;  
+    position: absolute;
+    margin-left: 90%;
+} 
+

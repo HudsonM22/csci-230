@@ -1,0 +1,49 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: rgb(41, 44, 48);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid aqua;
+}
+
+.info-item {
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid aqua;
+    transition: all 0.2s;
+    color: white;
+}
+
+.info-item:hover {
+    transform: translateX(8px);
+    box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.74);
+    color: aqua;
+}
+
+.label {
+    font-weight: bold;
+    display: inline-block;
+    width: 150px;
+    margin-right: 10px;
+    color: white;
+}
+
+.value {
+    font-family: monospace;
+}
