@@ -14,6 +14,17 @@ logAndDisplay('Network Type', navigator.connection.effectiveType)
 logAndDisplay('Downlink Speed', navigator.connection.downlink + ' Mbps')
 logAndDisplay('Memory', navigator.deviceMemory)
 
+if ('geolocation' in navigator) {
+    navigator.geolocation.getCurrentPosition(
+        (position) => {
+            const latitude = position.coords.latitude
+            const longitude = position.coords.longitude
+            logAndDisplay('Latitude', latitude)
+            logAndDisplay('Longitude', longitude)
+        }
+    )
+}
+
 function logAndDisplay(label, value) {
     console.log(label + ': ' + value)
 
@@ -27,3 +38,23 @@ function logAndDisplay(label, value) {
     output.appendChild(div)
 }
 //side note: im very proud of the color theme i did for my css
+
+const allowButton = document.getElementById('allow-notifications')
+const sendButton = document.getElementById('send-notification')
+
+allowButton.addEventListener('click', () => {
+    Notification.requestPermission().then(permission => {
+        if (permission === 'granted') {
+            sendButton.disabled = false
+            console.log('Notifications lookin good')
+        } else {
+            console.log('Notifications not good')
+        }
+    })
+})
+
+sendButton.addEventListener('click', () => {
+    new Notification('Notification', {
+        body: 'Hudson\'s notification'
+    })
+})
