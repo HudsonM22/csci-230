@@ -1,0 +1,38 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgb(150, 174, 196);
+}
+
+#form-container, #form-content-container {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 60px;
+
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: rgb(214, 214, 214);
+    box-shadow: 7px 36px 92px 15px rgba(0,0,0,0.43);
+}
+
+button {
+    border-radius: 20px;
+    background-color: aliceblue;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(80, 145, 210);
+    transform: translateY(-2px);
+}
